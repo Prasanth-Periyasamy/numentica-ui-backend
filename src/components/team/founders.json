@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_team_founders",
+  "info": {
+    "displayName": "founders",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    },
+    "companyName": {
+      "type": "string"
+    },
+    "profilePhoto": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

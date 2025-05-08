@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "collectionName": "teams",
+  "info": {
+    "singularName": "team",
+    "pluralName": "teams",
+    "displayName": "Team",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "heroSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.title-with-description"
+    },
+    "founders": {
+      "displayName": "founders",
+      "type": "component",
+      "repeatable": true,
+      "component": "team.founders"
+    },
+    "crew": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.title-with-description"
+    },
+    "joincrew": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.title-with-description"
+    },
+    "joinusBtn": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.button"
+    }
+  }
+}

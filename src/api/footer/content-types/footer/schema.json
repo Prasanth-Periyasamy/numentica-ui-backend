@@ -1,0 +1,44 @@
+{
+  "kind": "singleType",
+  "collectionName": "footers",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footers",
+    "displayName": "Footer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "companyLogo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "companyName": {
+      "type": "string"
+    },
+    "copyRight": {
+      "type": "string"
+    },
+    "footerlinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "footer.footer-links"
+    },
+    "contactus": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.title-with-description"
+    },
+    "newsletter": {
+      "type": "component",
+      "repeatable": false,
+      "component": "footer.news-letter"
+    }
+  }
+}

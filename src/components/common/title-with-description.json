@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_common_title_with_descriptions",
+  "info": {
+    "displayName": "TitleWithDescription",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

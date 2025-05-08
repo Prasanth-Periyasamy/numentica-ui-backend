@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_common_image_with_descriptions",
+  "info": {
+    "displayName": "ImageWithDescription"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "description": {
+      "type": "blocks"
+    }
+  }
+}

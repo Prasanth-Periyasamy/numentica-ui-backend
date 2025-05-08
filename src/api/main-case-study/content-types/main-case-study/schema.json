@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "main_case_studies",
+  "info": {
+    "singularName": "main-case-study",
+    "pluralName": "main-case-studies",
+    "displayName": "MainCaseStudy",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "heroSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.title-with-description"
+    },
+    "case_studies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::case-study.case-study"
+    }
+  }
+}

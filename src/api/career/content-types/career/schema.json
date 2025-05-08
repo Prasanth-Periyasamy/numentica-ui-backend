@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "careers",
+  "info": {
+    "singularName": "career",
+    "pluralName": "careers",
+    "displayName": "Career"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "careers": {
+      "type": "dynamiczone",
+      "components": [
+        "common.title-with-description"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "main_blogs",
+  "info": {
+    "singularName": "main-blog",
+    "pluralName": "main-blogs",
+    "displayName": "MainBlog",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "blogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_aboutus_impacts",
+  "info": {
+    "displayName": "Impact",
+    "icon": "chartBubble"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "impactDetails": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.title-with-description"
+    }
+  }
+}

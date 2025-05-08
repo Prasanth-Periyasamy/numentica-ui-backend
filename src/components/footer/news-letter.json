@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_footer_news_letters",
+  "info": {
+    "displayName": "NewsLetter"
+  },
+  "options": {},
+  "attributes": {
+    "news": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.title-with-description"
+    },
+    "subscribe": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.button"
+    }
+  }
+}

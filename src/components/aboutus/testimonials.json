@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_aboutus_testimonials",
+  "info": {
+    "displayName": "Testimonials",
+    "icon": "car",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "projectName": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "profilePhoto": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
