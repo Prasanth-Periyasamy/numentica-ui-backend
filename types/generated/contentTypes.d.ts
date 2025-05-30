@@ -711,6 +711,55 @@ export interface ApiHeaderHeader extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiHomeHome extends Struct.SingleTypeSchema {
+  collectionName: 'homes';
+  info: {
+    description: '';
+    displayName: 'Home';
+    pluralName: 'homes';
+    singularName: 'home';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    feedback: Schema.Attribute.Component<'home.client-feedback', true>;
+    footprint: Schema.Attribute.Component<
+      'common.image-with-description',
+      false
+    >;
+    getInTouch: Schema.Attribute.Component<'home.getin-touch', false>;
+    heroSection: Schema.Attribute.Component<
+      'common.title-with-description',
+      false
+    >;
+    insideSection: Schema.Attribute.Component<
+      'common.title-with-description',
+      false
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::home.home'> &
+      Schema.Attribute.Private;
+    partnersSection: Schema.Attribute.Component<'home.partners', true>;
+    publishedAt: Schema.Attribute.DateTime;
+    serviceSection: Schema.Attribute.Component<
+      'common.title-with-description',
+      true
+    >;
+    teamSection: Schema.Attribute.Component<'home.team', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    visionSection: Schema.Attribute.Component<
+      'common.title-with-description',
+      false
+    >;
+  };
+}
+
 export interface ApiMainBlogMainBlog extends Struct.SingleTypeSchema {
   collectionName: 'main_blogs';
   info: {
@@ -1368,6 +1417,7 @@ declare module '@strapi/strapi' {
       'api::footer.footer': ApiFooterFooter;
       'api::global.global': ApiGlobalGlobal;
       'api::header.header': ApiHeaderHeader;
+      'api::home.home': ApiHomeHome;
       'api::main-blog.main-blog': ApiMainBlogMainBlog;
       'api::main-case-study.main-case-study': ApiMainCaseStudyMainCaseStudy;
       'api::solution.solution': ApiSolutionSolution;

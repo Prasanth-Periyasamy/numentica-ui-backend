@@ -110,6 +110,57 @@ export interface FooterNewsLetter extends Struct.ComponentSchema {
   };
 }
 
+export interface HomeClientFeedback extends Struct.ComponentSchema {
+  collectionName: 'components_home_client_feedbacks';
+  info: {
+    displayName: 'clientFeedback';
+  };
+  attributes: {
+    clientName: Schema.Attribute.String;
+    clientPhoto: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    feedback: Schema.Attribute.Blocks;
+  };
+}
+
+export interface HomeGetinTouch extends Struct.ComponentSchema {
+  collectionName: 'components_home_getin_touches';
+  info: {
+    displayName: 'GetinTouch';
+  };
+  attributes: {
+    btnName: Schema.Attribute.String;
+    btnSlug: Schema.Attribute.String;
+    title: Schema.Attribute.Text;
+  };
+}
+
+export interface HomePartners extends Struct.ComponentSchema {
+  collectionName: 'components_home_partners';
+  info: {
+    displayName: 'Partners';
+  };
+  attributes: {
+    btnName: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
+    partnerPhoto: Schema.Attribute.Media<'images' | 'files'>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface HomeTeam extends Struct.ComponentSchema {
+  collectionName: 'components_home_teams';
+  info: {
+    displayName: 'team';
+  };
+  attributes: {
+    book: Schema.Attribute.Component<'common.button', false>;
+    founders: Schema.Attribute.Component<'team.founders', true>;
+    teams: Schema.Attribute.Component<'common.title-with-description', false>;
+  };
+}
+
 export interface SharedMedia extends Struct.ComponentSchema {
   collectionName: 'components_shared_media';
   info: {
@@ -198,6 +249,10 @@ declare module '@strapi/strapi' {
       'footer.footer-links': FooterFooterLinks;
       'footer.links': FooterLinks;
       'footer.news-letter': FooterNewsLetter;
+      'home.client-feedback': HomeClientFeedback;
+      'home.getin-touch': HomeGetinTouch;
+      'home.partners': HomePartners;
+      'home.team': HomeTeam;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;

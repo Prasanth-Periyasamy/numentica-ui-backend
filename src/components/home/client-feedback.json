@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_home_client_feedbacks",
+  "info": {
+    "displayName": "clientFeedback"
+  },
+  "options": {},
+  "attributes": {
+    "clientName": {
+      "type": "string"
+    },
+    "feedback": {
+      "type": "blocks"
+    },
+    "clientPhoto": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

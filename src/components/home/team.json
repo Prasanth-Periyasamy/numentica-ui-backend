@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_home_teams",
+  "info": {
+    "displayName": "team"
+  },
+  "options": {},
+  "attributes": {
+    "teams": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.title-with-description"
+    },
+    "book": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.button"
+    },
+    "founders": {
+      "type": "component",
+      "repeatable": true,
+      "component": "team.founders"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_home_getin_touches",
+  "info": {
+    "displayName": "GetinTouch"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "btnName": {
+      "type": "string"
+    },
+    "btnSlug": {
+      "type": "string"
+    }
+  }
+}
